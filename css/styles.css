@@ -1,0 +1,226 @@
+:root {
+  --bg: #000000;
+  --bg-card: #0e1218;
+  --text: #f1f1f1;
+  --img-profile: #4dbce9;
+  --buttons: #fff;
+  --border-button: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-card);
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-card {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2.2rem;
+}
+
+.card {
+  background-color: var(--bg);
+  width: 43.8rem;
+  height: 69.3rem;
+  border-radius: 5rem;
+  padding: 2.5rem 1.6rem;
+}
+
+.card-content {
+  background-color: var(--bg-card);
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  padding: 3.77rem 0.65rem 2.75rem 3.35rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-card .logo img {
+  margin-right: 1.95rem;
+  width: 3.7rem;
+  height: 3.7rem;
+}
+
+.header-card span {
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.content {
+  flex: 1;
+  position: relative;
+}
+
+.content .perfil {
+  margin-top: 3rem;
+  width: 37.2rem;
+  height: 37.2rem;
+  border-radius: 50%;
+  background-image: url(../assets/perfil.jpg);
+  background-size: cover;
+  position: absolute;
+  right: -3.9rem;
+  border: 1rem solid var(--img-profile);
+}
+
+.content .info {
+  width: 19.5rem;
+  height: 19.4rem;
+  position: absolute;
+  bottom: 3.45rem;
+  left: -1.2rem;
+  background: linear-gradient(
+    180deg,
+    #000000 3.65%,
+    rgba(70, 69, 69, 0.72) 53.65%,
+    rgba(62, 56, 56, 0.42) 100%
+  );
+  border-radius: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .info {
+  padding: 3.3rem 2rem 2.5rem;
+}
+
+.content .info ul {
+  list-style: none;
+}
+
+.content .info ul li {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.content .info ul li img {
+  width: 2.07rem;
+  height: 2.07rem;
+  margin-right: 0.9rem;
+}
+
+.content .info ul li span {
+  margin-right: 0.5rem;
+}
+
+.footer-card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-card img {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+
+.footer-card span {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+
+.input-buttom {
+  margin-left: 14.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  margin-bottom: 10rem;
+  height: 6rem;
+  width: 100%;
+}
+
+.input-container input,
+.input-container button {
+  height: 100%;
+  border: 0.1rem solid var(--border-button);
+  border-radius: 1.5rem;
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 1rem;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.input-container input {
+  width: 80%;
+}
+
+.input-container button {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.input-container button:hover {
+  transform: translateY(3%);
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.btn-container .btn {
+  width: 22.9rem;
+  height: 6rem;
+  font-size: 1.5rem;
+  outline: none;
+  background-color: var(--bg);
+  color: var(--buttons);
+  border: 0.2rem solid var(--border-button);
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(3%);
+}
