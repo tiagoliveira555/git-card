@@ -4,11 +4,6 @@ const getGithub = async (user) => {
   const response = await fetch(`https://api.github.com/users/${user}`);
   const data = await response.json();
 
-  if (!data) {
-    alert("Nenhum usuário encontrado!");
-    return;
-  }
-
   return data;
 };
 
@@ -30,6 +25,11 @@ const setPerfilCard = async (user) => {
     company,
     location,
   } = await getGithub(user);
+
+  if (!login) {
+    alert("Nenhum usuário encontrado!");
+    return;
+  }
 
   userLogin.textContent = login;
   imgPerfil.style.backgroundImage = `url(${avatar_url})`;
