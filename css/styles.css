@@ -225,3 +225,32 @@ body {
 .btn:hover {
   transform: translateY(3%);
 }
+
+@media (max-width: 1100px) {
+  .container {
+    transform: scale(-80%) rotate(180deg);
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    margin-top: -15rem;
+    transform: scale(-70%) rotate(180deg);
+    flex-direction: column;
+  }
+
+  .input-buttom {
+    margin: 10rem 0 0 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    margin-top: -20rem;
+    transform: scale(-60%) rotate(180deg);
+  }
+
+  .input-buttom {
+    margin: 2rem 0;
+  }
+}
